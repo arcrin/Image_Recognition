@@ -21,7 +21,7 @@ new_points = [point for point in keypoints if point.size > 11.0]
 gray_img = cv2.drawKeypoints(gray_img, new_points,
                               None,
                               flags=cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
-cv2.namedWindow('SIFT features', cv2.WINDOW_NORMAL)
-cv2.resizeWindow('SIFT features', 600, 600)
+# cv2.namedWindow('SIFT features', cv2.WINDOW_NORMAL)
+# cv2.resizeWindow('SIFT features', 600, 600)
 cv2.imshow('SIFT features', gray_img)
 cv2.waitKey()
