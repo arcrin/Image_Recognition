@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 
-input_img = cv2.imread("cpu_01.jpg")
+input_img = cv2.imread("cpu_erode.jpg")
 gray_img = cv2.cvtColor(input_img, cv2.COLOR_BGR2GRAY)
 
 sift = cv2.xfeatures2d.SIFT_create()
